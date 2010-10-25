@@ -1,0 +1,15 @@
+Munin Mobile
+By: Niklas Bivald
+
+INTRODUCTION
+A mobile munin template (using jquery-mobile). This allows your munin installations to be easily monitored with your smartphone.
+
+Made for the debian package, 1.2.6. 
+
+It's very early, so far it's more of a proof of concept.
+
+INSTALL
+... will follow
+
+SCREENSHOTS
+... will follow
