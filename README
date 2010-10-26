@@ -2,14 +2,34 @@ Munin Mobile
 By: Niklas Bivald
 
 INTRODUCTION
-A mobile munin template (using jquery-mobile). This allows your munin installations to be easily monitored with your smartphone.
+Munin Mobile is a mobile template for Munin, using jquery-mobile. This allows 
+your Munin installations to be easily monitored with your smartphone. 
 
-Made for the debian package, 1.2.6. 
+Munin Mobile is initially made for the Munin debian package (1.2.6). Currently 
+I haven't tested any other versions.  
 
-It's very early, so far it's more of a proof of concept.
+Both Munin Mobile and jquery-mobile are a bit rough (jQuery Mobile is alpha!)
+and before you tell me that this could be made without jQuery Mobile using just
+special CSS: Yes, it could. But this is just as much exploring jQuery Mobile
+as it is exploring Munin.
+
+We're hooking into munin-html with a custom configuration file, hopefully making 
+it as "Munin-friendly" as possible. 
 
 INSTALL
-... will follow
+Assuming you have the standard debian package (/etc/munin, /var/www/munin) you 
+*should* just be able to run the ./install.sh script. This will install templates 
+and configuration file (which you might want to check out)
+
+We also need to make Munin create the job that regularly updates the HTML. In the 
+future we will hook it into Munin itself, but for now, use this crontab from your 
+Munin user:
+
+* * * * * /usr/share/munin/munin-html --config=/etc/munin/munin-mobile.conf
+
+After installation, you should have a mobile-subfolder in your munin 
+(yourdomain.com/munin/mobile). Also, the CSS/JS right now assumes you have 
+munin in a subfolder (yourdomain.com/munin). This will be fixed in upcoming releases. 
 
 SCREENSHOTS
 ... will follow
