@@ -25,11 +25,23 @@ We also need to make Munin create the job that regularly updates the HTML. In th
 future we will hook it into Munin itself, but for now, use this crontab from your 
 Munin user:
 
-* * * * * /usr/share/munin/munin-html --config=/etc/munin/munin-mobile.conf
+# m h  dom mon dow   command
+*/5 * * * * /etc/munin/update-mobile.sh
 
 After installation, you should have a mobile-subfolder in your munin 
 (yourdomain.com/munin/mobile). Also, the CSS/JS right now assumes you have 
 munin in a subfolder (yourdomain.com/munin). This will be fixed in upcoming releases. 
+
+DEPENDENCIES
+We're currently resizing all images "manually", mainly because I haven't found any
+good way to do this in munin without updating the munin-nodes.
+
+We're currently using ImageMagick to do this, to install:
+
+apt-get install imagemagick
+
+If someone could point me to how to resize munin graphs natively on master, I would
+be very happy. 
 
 SCREENSHOTS
 ... will follow
