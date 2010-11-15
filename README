@@ -1,6 +1,8 @@
 Munin Mobile
 By: Niklas Bivald
 
+www.munin-mobile.com
+
 INTRODUCTION
 Munin Mobile is a mobile template for Munin, using jquery-mobile. This allows 
 your Munin installations to be easily monitored with your smartphone. 
@@ -29,14 +31,13 @@ Munin user:
 */5 * * * * /etc/munin/update-mobile.sh
 
 After installation, you should have a mobile-subfolder in your munin 
-(yourdomain.com/munin/mobile). Also, the CSS/JS right now assumes you have 
-munin in a subfolder (yourdomain.com/munin). This will be fixed in upcoming releases. 
+(yourdomain.com/munin/mobile). 
 
 DEPENDENCIES
 We're currently resizing all images "manually", mainly because I haven't found any
 good way to do this in munin without updating the munin-nodes.
 
-We're currently using ImageMagick to do this, to install:
+We're currently using ImageMagick to do this, so install:
 
 apt-get install imagemagick
 
@@ -44,4 +45,7 @@ If someone could point me to how to resize munin graphs natively on master, I wo
 be very happy. 
 
 SCREENSHOTS
-... will follow
+You will find screenshots on http://www.munin-mobile.com/screenshots/
+
+DEMO
+Demo can be found on http://demo.munin-mobile.com

@@ -17,10 +17,16 @@ echo ""
 echo "############################################################"
 echo ""
 
-if [ $1 == "a" ]
+if [ $1 ]
 then
-    echo "- Auto-continue supplied as argument"
-    continue='Y'
+    if [ $1 == "--auto" ]
+    then
+	    echo "- Auto-continue supplied as argument"
+	    continue='Y'
+     else
+	echo -n "Continue? [Y]: "
+	read continue
+     fi
 else
     echo -n "Continue? [Y]: "
     read continue

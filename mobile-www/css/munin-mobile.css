@@ -97,3 +97,15 @@
     font-weight: normal;
     font-size: 13px;
 }
+
+/* footer */
+.ui-mobile .footer {
+	font-size: 10px;
+	text-align: center;
+}
+
+.ui-mobile .footer a {
+	color: inherit;
+	font-weight: inherit;
+}
+
