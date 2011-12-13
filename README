@@ -34,15 +34,11 @@ After installation, you should have a mobile-subfolder in your munin
 (yourdomain.com/munin/mobile). 
 
 DEPENDENCIES
-We're currently resizing all images "manually", mainly because I haven't found any
-good way to do this in munin without updating the munin-nodes.
+None
 
-We're currently using ImageMagick to do this, so install:
-
-apt-get install imagemagick
-
-If someone could point me to how to resize munin graphs natively on master, I would
-be very happy. 
+IMAGE RESIZING
+Previous versions resized all images using mogrify. If you still want to do this, 
+simply "apt-get install imagemagick" and uncomment the last line of update-mobile.sh
 
 SCREENSHOTS
 You will find screenshots on http://www.munin-mobile.com/screenshots/
