@@ -5,7 +5,7 @@
 .ui-mobile #jqm-version { text-indent: -99999px; background: url(../images/version.png) top right no-repeat; width: 119px; height: 122px; overflow: hidden; position: absolute; top: 0; right: 0; }
 .ui-mobile .jqm-themeswitcher { clear: both; margin: 20px 0 -15px; }
 
-/*
+/* 
 .ui-li-thumb {
     float: auto !important;
     
@@ -56,9 +56,13 @@
 }
 
 .ui-mobile .overview_child .ui-btn-inner {
-    padding-top: 6px !important;
+    padding-top: 0px !important;
     font-weight: normal;
     font-size: 13px;
+}
+
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
+    padding: .4em 15px .7em 15px;
 }
 
 .ui-mobile .overview_child .ui-btn-inner .ui-icon {
@@ -78,7 +82,7 @@
 }
 
 .ui-mobile .show_all_graphs {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 
 
@@ -109,3 +113,13 @@
 	font-weight: inherit;
 }
 
+.ui-btn-active a.ui-link-inherit {
+    color: #2F3E46;
+    font-weight: bold !important;
+    text-shadow: none !important;
+}
+
+.ui-btn-active {
+    border: 0 !important;
+    text-shadow: none !important;
+}
