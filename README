@@ -48,3 +48,12 @@ Demo can be found on http://demo.munin-mobile.com
 
 MUNIN MOBILE FOR 1.4.5
 Can be found on fork https://github.com/VvanGemert/munin-mobile
+
+MUNIN MOBILE FOR 1.2.6
+The main branch of munin mobile is moving towards munin 2.0, thus the 
+1.2.6 version is under the "for-1.2.6" branch
+
+MUNIN MOBILE LICENSE
+Munin Mobile is distrubuted under the GNU GPL version 2.  Munin Mobile
+is copyrighted 2010-2012 by its various authors as identified in the
+source files.
